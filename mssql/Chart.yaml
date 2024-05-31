@@ -10,3 +10,4 @@ maintainers:
 sources:
 - https://hub.docker.com/_/microsoft-mssql-server
 - https://github.com/SushilSanjayBhile/mssql-helm-chart
+icon: https://raw.githubusercontent.com/licenseware/charts/main/static/png/mssql.png
