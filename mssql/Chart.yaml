@@ -4,3 +4,9 @@ description: A Helm chart deploying mssql on Kubernetes cluster as a deployment
 name: mssql
 type: application
 version: 0.1.0
+maintainers:
+- name: Diamanti
+  url: https://diamanticom.github.io/catalog-helm-charts
+sources:
+- https://hub.docker.com/_/microsoft-mssql-server
+- https://github.com/SushilSanjayBhile/mssql-helm-chart
