@@ -19,12 +19,15 @@ spec:
         image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
         ports:
         - containerPort: {{ .Values.service.port }}
+        securityContext:
+          runAsUser: {{ .Values.securityContext.runAsUser }}
+          runAsGroup: {{ .Values.securityContext.runAsGroup }}
         env:
         - name: ACCEPT_EULA
-          value: "Y"
+          value: "{{ .Values.env.ACCEPT_EULA }}"
         - name: MSSQL_SA_PASSWORD
-          value: "Diamanti@111"
+          value: {{ .Values.env.MSSQL_SA_PASSWORD }}
         - name: MSSQL_PID
-          value: "Evaluation"
+          value: {{ .Values.env.MSSQL_PID }}
       hostname: mssql
 

@@ -17,3 +17,6 @@ env:
   MSSQL_SA_PASSWORD: "Diamanti@111"
   MSSQL_PID: "Evaluation"
 
+securityContext:
+  runAsUser: "0"
+  runAsGroup: "0"
